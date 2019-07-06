@@ -2,10 +2,7 @@
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-    var edad;
-   
-    edad=prompt("ingrese su edad");
-   
-    alert(edad);
+  var nombre
+  nombre=prompt("Escriba su nombre");
+  alert(nombre);
 }
-
