@@ -1,9 +1,16 @@
 function mostrar()
 {
 //tomo la edad  
-var laHora = document.getElementById('hora').value;
+    var hora = document.getElementById('hora').value;
 
-//alert (laHora);
+    if(hora >= 7 && hora <= 11)
+
+        alert("Es de mañana");
+
+
+    
+
+
 	
 	
 
