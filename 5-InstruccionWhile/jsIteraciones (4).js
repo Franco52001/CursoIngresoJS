@@ -1,7 +1,11 @@
 function mostrar()
 {
-
-	var numero = prompt("ingrese un número entre 0 y 10.");
-
+	var number=0
+	number=prompt("Ingrese numero");
+	
+	while(number < 0 || number > 10){
+		number=prompt("Numero incorrecto");
+	}
+	document.getElementById("Numero").value=number
 
 }//FIN DE LA FUNCIÓN
