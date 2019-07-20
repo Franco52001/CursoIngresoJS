@@ -9,6 +9,7 @@ function mostrar() {
 	var acumuladorN = 0;
 	var promedioP;
 	var promedioN;
+	var diferencia;
 
 	var num
 	//declarar contadores y variables 
@@ -23,13 +24,14 @@ function mostrar() {
 		{
 			contadorP++; //o positivo=positivo+1
 			acumuladorP = acumuladorP + num; //o acumuladorP += num
-
+			
 		}
 		
 		else if (num < 0) 
 		{
 			contadorN++;
 			acumuladorN = acumuladorN + num;
+		
 		}
 		else
 		{
@@ -40,8 +42,10 @@ function mostrar() {
 		{
 			contadorPar++
 		}
-
+		
+		
 		respuesta = confirm("Desea ingresar otro numero?");
+
 
 	}
 	if(contadorP != 0)
@@ -61,6 +65,8 @@ function mostrar() {
 		promedioN = "No se ingresaron numeros negativos"
 	}
 
+	diferencia = acumuladorP + acumuladorN
+
 	document.write("1. Suma de positivos: " + acumuladorP + "<br>"); 
 	document.write("2. Suma de negativos: " + acumuladorN + "<br>");
 	document.write("3. Positivos: " + contadorP + "<br>");
@@ -69,6 +75,8 @@ function mostrar() {
 	document.write("6. Pares: " + contadorPar + "<br>");
 	document.write("7. Promedio de positivos : " + promedioP + "<br>");
 	document.write("8. Promedio de negativos : " + promedioN + "<br>");
+	document.write("9. Diferencia : " + diferencia + "<br>");
+
 
 	//me aparecian numeros "aleatorios" por que no use br (salto de linea)
 

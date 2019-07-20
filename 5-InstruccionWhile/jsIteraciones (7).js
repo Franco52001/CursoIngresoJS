@@ -3,11 +3,11 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var respuesta='si';
+	var respuesta = true;
 	var num;
 	
 
-	while(respuesta =="si") {
+	while(respuesta == true) {
 		
 		num=prompt("Ingrese numero");
 		num=parseInt(num);
@@ -16,7 +16,7 @@ function mostrar()
 
 		contador=contador+1;
 
-		respuesta=prompt("Desea ingresar otro numero si/no");
+		respuesta = confirm("Desea ingresar otro numero?");
 
 		}
 
