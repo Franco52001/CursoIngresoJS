@@ -2,13 +2,21 @@ function mostrar()
 {
 	var contador=0
 	var acumulador=0
+	var num
 	
-	contador=prompt("Ingrese 5 numeros");
+	while(contador < 5){
 
-	while(contador < 5 ){
-		contador++
-		contador=prompt("Error,ingrese 5 numeros")
+		num=prompt("Ingrese numero");
+
+		num=parseInt(num);
+
+		acumulador=acumulador+num
+
+		contador=contador+1
+
 	}
+	
+	
 
 
 	document.getElementById("suma").value=acumulador
