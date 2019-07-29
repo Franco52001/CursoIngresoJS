@@ -9,18 +9,27 @@ function mostrar()
 
 	while(respuesta == true)
 	{
+		contador++;
+
 		num = prompt("Ingrese numero");
 		num = parseInt(num);
+		
+
+		if(contador == 1)
+		{
+			maximo = num
+			minimo = num
+		}
 
 		
-		if(num > maximo)
+		else if(num > maximo)
 		{
-			maximo=num
+			maximo = num
 		}
 
 		else if(num < minimo)
 		{
-			minimo=num
+			minimo = num
 		}
 
 		respuesta = confirm("Ingresar otro numero?");
