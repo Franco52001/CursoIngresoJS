@@ -3,6 +3,8 @@ function mostrar()
     var hora;
     var mensaje;
 
+    hora = document.getElementById("laHora").value;
+
     switch(hora)
     {
         case "6":
@@ -37,8 +39,14 @@ function mostrar()
         mensaje = "Es de noche"
         if( hora > 19 && hora < 24)
         {
-            mensaje = "a dormir";
+            mensaje = " Es de noche, a dormir";
         }
+        
+        break;
+
+        default:
+        mensaje = "No es una hora valida"
+        break;
     }
 
     alert(mensaje);
