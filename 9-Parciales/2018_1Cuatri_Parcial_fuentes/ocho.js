@@ -19,15 +19,15 @@ function mostrar()
     for(respuesta = true ; respuesta == true ; respuesta = confirm("Ingresar otro numero?") )
     {
         numero = prompt("Ingrese numero");
-        while(numero < -100 || numero > 100)
+        while(numero < -100 || numero > 100 || (isNaN(numero)))//con && no funciona
         {
             numero = prompt("Numero no valido");
         }
         numero = parseInt(numero)
 
         letra = prompt("Ingrese letra");
-        while (!(isNaN(letra)))
-        {
+         while (letra.length > 1 || (!(isNaN(letra)))) //con && no funciona
+         { 
             letra = prompt("Letra no valida");
         }
 
@@ -60,7 +60,9 @@ function mostrar()
         if(contadorMN == 1)
 	{
 	maximo = numero;
-	minimo = numero;
+    minimo = numero;
+    letraMax = letra;
+    letraMin = letra;
 
 	}
 
@@ -85,8 +87,8 @@ function mostrar()
     document.write("Cantidad de ceros " + contadorCero + "<br>")
     document.write("Suma de negativos " + acumuladorNeg + "<br>")
     document.write("Promedio de positivos " + promedioPos + "<br>")
-    document.write("Maximo " + maximo + letra + "<br>")
-    document.write("Minimo " + minimo + letra + "<br>")
+    document.write("Maximo " + maximo + letraMax + "<br>")
+    document.write("Minimo " + minimo + letraMin + "<br>")
 
 
 
