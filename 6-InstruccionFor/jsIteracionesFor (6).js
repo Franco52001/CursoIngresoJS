@@ -1,26 +1,19 @@
-function mostrar() {
+function mostrar() {    
 
-    var num = prompt("Ingrese numero");
-    var contador = 0
+    var cantidadPares=0;
 
-    for (numm = 0 ; ; numm++) {
-        
-        if (numm % 2 != 0)
+    numero=prompt("Ingrese un número");
+    numero=parseInt(numero);
+
+    for (i = 1 ; i <= numero ; i++)
+    {
+        if(i % 2 == 0)
         {
-        continue;
+            console.log(i);
+            cantidadPares++;
         }
-
-        contador++
-        
-        alert(contador);
-            
-        if (numm == num) {
-            break;
-            
-        }
-        
     }
+    console.log("La cantida de números pares es "+cantidadPares)
 
-
-
+ // sigo sin entender como hacer esto la verdad
 }//FIN DE LA FUNCIÓN
