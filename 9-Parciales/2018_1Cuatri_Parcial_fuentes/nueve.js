@@ -11,8 +11,9 @@ function mostrar()
     var promedioPeso = 0;
     var contador = 0;
     var acumuladorPeso = 0;
+    var respuesta = true; 
 
-    for(respuesta = true; respuesta == true ; respuesta = confirm("Desea continuar?"))
+    while( respuesta == true ) //como en este no se la cantidad de veces que se van a ingresar datos uso while
     {
         marca = prompt("Ingrese la marca del producto");
         while (!(isNaN(marca)))
@@ -62,7 +63,7 @@ function mostrar()
         {
             contadorCero++
         }
-        
+        respuesta = confirm("Desea continuar?")
     }
 
 

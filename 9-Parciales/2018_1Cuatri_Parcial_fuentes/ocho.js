@@ -15,8 +15,9 @@ function mostrar()
     var contadorMN = 0;
     var letraMax;
     var letraMin;
+    var respuesta = true;
     
-    for(respuesta = true ; respuesta == true ; respuesta = confirm("Ingresar otro numero?") )
+    while(respuesta == true)//como en este no se la cantidad de veces que se van a ingresar datos uso while
     {
         numero = prompt("Ingrese numero");
         while(numero < -100 || numero > 100 || (isNaN(numero)))//con && no funciona
@@ -79,7 +80,7 @@ function mostrar()
 	}
 
         promedioPos = acumuladorPos / contadorPos
-
+        respuesta = confirm("Ingresar otro numero?")
     }
 
     document.write( "Cantidad de pares " + contadorPar + "<br>")
