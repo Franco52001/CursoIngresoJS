@@ -78,7 +78,7 @@ function mostrar()
     minimo = numero;
     letraMin = letra;
 	}
-
+        //hay que validar que la division no se haga por 0 o que no se haga cuando no se ingresaron numeros
         promedioPos = acumuladorPos / contadorPos
         respuesta = confirm("Ingresar otro numero?")
     }
